@@ -1,0 +1,6 @@
+framework module NxCalendar {
+  umbrella header "NxCalendar-umbrella.h"
+
+  export *
+  module * { export * }
+}

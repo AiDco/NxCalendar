@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		2F16D22566ECEC74495C025A /* Pods_NxCalendar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NxCalendar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		38679645B1E5F2102936980C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		38679645B1E5F2102936980C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* NxCalendar_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NxCalendar_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,11 +42,11 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		788285DAAD0DD37EE9745CC0 /* Pods-NxCalendar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NxCalendar_Example.release.xcconfig"; path = "Target Support Files/Pods-NxCalendar_Example/Pods-NxCalendar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		82F1525FFC0376CFB9884AFC /* Pods-NxCalendar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NxCalendar_Tests.debug.xcconfig"; path = "Target Support Files/Pods-NxCalendar_Tests/Pods-NxCalendar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B093CE5CBC44AC886BE56423 /* NxCalendar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = NxCalendar.podspec; path = ../NxCalendar.podspec; sourceTree = "<group>"; };
+		B093CE5CBC44AC886BE56423 /* NxCalendar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NxCalendar.podspec; path = ../NxCalendar.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BBEDAF32972A9BF98A414798 /* Pods_NxCalendar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NxCalendar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28AD130E181C38B0B3C2D1D /* Pods-NxCalendar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NxCalendar_Example.debug.xcconfig"; path = "Target Support Files/Pods-NxCalendar_Example/Pods-NxCalendar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FA5951F81EA9BAB296309CF4 /* Pods-NxCalendar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NxCalendar_Tests.release.xcconfig"; path = "Target Support Files/Pods-NxCalendar_Tests/Pods-NxCalendar_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FBF61BD246BD9B1CA5F27731 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FBF61BD246BD9B1CA5F27731 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,6 @@
 				82F1525FFC0376CFB9884AFC /* Pods-NxCalendar_Tests.debug.xcconfig */,
 				FA5951F81EA9BAB296309CF4 /* Pods-NxCalendar_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -419,7 +419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +465,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

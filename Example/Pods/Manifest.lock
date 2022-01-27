@@ -1,0 +1,16 @@
+PODS:
+  - NxCalendar (0.1.0)
+
+DEPENDENCIES:
+  - NxCalendar (from `../`)
+
+EXTERNAL SOURCES:
+  NxCalendar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NxCalendar: e5f3668368c2ebd7756d8f543d900ea34c39ed24
+
+PODFILE CHECKSUM: 09f040d9e7c60af00e3472c5a0bd7de0cca0b15d
+
+COCOAPODS: 1.11.2
