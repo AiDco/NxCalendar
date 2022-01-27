@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DD6B1BB27A2E8B4006F679C /* NxCalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B027A2E8B4006F679C /* NxCalendarHeaderView.swift */; };
+		0DD6B1BC27A2E8B4006F679C /* NxCalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B027A2E8B4006F679C /* NxCalendarHeaderView.swift */; };
+		0DD6B1BD27A2E8B4006F679C /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B127A2E8B4006F679C /* UIFont+Extension.swift */; };
+		0DD6B1BE27A2E8B4006F679C /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B127A2E8B4006F679C /* UIFont+Extension.swift */; };
+		0DD6B1BF27A2E8B4006F679C /* AssetsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B227A2E8B4006F679C /* AssetsProvider.swift */; };
+		0DD6B1C027A2E8B4006F679C /* AssetsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B227A2E8B4006F679C /* AssetsProvider.swift */; };
+		0DD6B1C127A2E8B4006F679C /* NxCalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B327A2E8B4006F679C /* NxCalendarCollectionViewCell.swift */; };
+		0DD6B1C227A2E8B4006F679C /* NxCalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B327A2E8B4006F679C /* NxCalendarCollectionViewCell.swift */; };
+		0DD6B1C327A2E8B4006F679C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B427A2E8B4006F679C /* Date+Extension.swift */; };
+		0DD6B1C427A2E8B4006F679C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B427A2E8B4006F679C /* Date+Extension.swift */; };
+		0DD6B1C527A2E8B4006F679C /* MonthMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B527A2E8B4006F679C /* MonthMetadata.swift */; };
+		0DD6B1C627A2E8B4006F679C /* MonthMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B527A2E8B4006F679C /* MonthMetadata.swift */; };
+		0DD6B1C727A2E8B4006F679C /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B627A2E8B4006F679C /* Calendar+Extension.swift */; };
+		0DD6B1C827A2E8B4006F679C /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B627A2E8B4006F679C /* Calendar+Extension.swift */; };
+		0DD6B1C927A2E8B4006F679C /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B727A2E8B4006F679C /* Day.swift */; };
+		0DD6B1CA27A2E8B4006F679C /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B727A2E8B4006F679C /* Day.swift */; };
+		0DD6B1CB27A2E8B4006F679C /* NxCalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B827A2E8B4006F679C /* NxCalendarService.swift */; };
+		0DD6B1CC27A2E8B4006F679C /* NxCalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B827A2E8B4006F679C /* NxCalendarService.swift */; };
+		0DD6B1CD27A2E8B4006F679C /* NxCalendarConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B927A2E8B4006F679C /* NxCalendarConfiguration.swift */; };
+		0DD6B1CE27A2E8B4006F679C /* NxCalendarConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B927A2E8B4006F679C /* NxCalendarConfiguration.swift */; };
+		0DD6B1CF27A2E8B4006F679C /* NxCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1BA27A2E8B4006F679C /* NxCalendarView.swift */; };
+		0DD6B1D027A2E8B4006F679C /* NxCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1BA27A2E8B4006F679C /* NxCalendarView.swift */; };
 		0DDFBA7527A2D1EC00E9DDBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6127A2D1EC00E9DDBC /* Assets.xcassets */; };
 		0DDFBA7627A2D1EC00E9DDBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6127A2D1EC00E9DDBC /* Assets.xcassets */; };
 		0DDFBA7727A2D1EC00E9DDBC /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6427A2D1EC00E9DDBC /* DMSans-Bold.ttf */; };
 		0DDFBA7827A2D1EC00E9DDBC /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6427A2D1EC00E9DDBC /* DMSans-Bold.ttf */; };
-		0DDFBA7927A2D1EC00E9DDBC /* NxCalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6627A2D1EC00E9DDBC /* NxCalendarHeaderView.swift */; };
-		0DDFBA7A27A2D1EC00E9DDBC /* NxCalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6627A2D1EC00E9DDBC /* NxCalendarHeaderView.swift */; };
-		0DDFBA7B27A2D1ED00E9DDBC /* NxCalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6727A2D1EC00E9DDBC /* NxCalendarCollectionViewCell.swift */; };
-		0DDFBA7C27A2D1ED00E9DDBC /* NxCalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6727A2D1EC00E9DDBC /* NxCalendarCollectionViewCell.swift */; };
-		0DDFBA7D27A2D1ED00E9DDBC /* NxCalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6827A2D1EC00E9DDBC /* NxCalendarService.swift */; };
-		0DDFBA7E27A2D1ED00E9DDBC /* NxCalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6827A2D1EC00E9DDBC /* NxCalendarService.swift */; };
-		0DDFBA7F27A2D1ED00E9DDBC /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6B27A2D1EC00E9DDBC /* Day.swift */; };
-		0DDFBA8027A2D1ED00E9DDBC /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6B27A2D1EC00E9DDBC /* Day.swift */; };
-		0DDFBA8127A2D1ED00E9DDBC /* MonthMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6C27A2D1EC00E9DDBC /* MonthMetadata.swift */; };
-		0DDFBA8227A2D1ED00E9DDBC /* MonthMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6C27A2D1EC00E9DDBC /* MonthMetadata.swift */; };
-		0DDFBA8327A2D1ED00E9DDBC /* NxCalendarConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6D27A2D1EC00E9DDBC /* NxCalendarConfiguration.swift */; };
-		0DDFBA8427A2D1ED00E9DDBC /* NxCalendarConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6D27A2D1EC00E9DDBC /* NxCalendarConfiguration.swift */; };
-		0DDFBA8527A2D1ED00E9DDBC /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6F27A2D1EC00E9DDBC /* UIFont+Extension.swift */; };
-		0DDFBA8627A2D1ED00E9DDBC /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6F27A2D1EC00E9DDBC /* UIFont+Extension.swift */; };
-		0DDFBA8727A2D1ED00E9DDBC /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA7027A2D1EC00E9DDBC /* Calendar+Extension.swift */; };
-		0DDFBA8827A2D1ED00E9DDBC /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA7027A2D1EC00E9DDBC /* Calendar+Extension.swift */; };
-		0DDFBA8927A2D1ED00E9DDBC /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA7127A2D1EC00E9DDBC /* Date+Extension.swift */; };
-		0DDFBA8A27A2D1ED00E9DDBC /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA7127A2D1EC00E9DDBC /* Date+Extension.swift */; };
-		0DDFBA8B27A2D1ED00E9DDBC /* AssetsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA7327A2D1EC00E9DDBC /* AssetsProvider.swift */; };
-		0DDFBA8C27A2D1ED00E9DDBC /* AssetsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA7327A2D1EC00E9DDBC /* AssetsProvider.swift */; };
-		0DDFBA8D27A2D1ED00E9DDBC /* NxCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA7427A2D1EC00E9DDBC /* NxCalendarView.swift */; };
-		0DDFBA8E27A2D1ED00E9DDBC /* NxCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDFBA7427A2D1EC00E9DDBC /* NxCalendarView.swift */; };
 		229C03DD05643D66FFAA98481A41A8C1 /* Pods-NxCalendar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB31CA2AF853C632642FABE645FBEF3 /* Pods-NxCalendar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B752C8852F35F353724B67DED85D722 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		324D4774EE56F45412CB8C82D11D8D5D /* Pods-NxCalendar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF07CA7231D59D59622DBB3F845E041C /* Pods-NxCalendar_Tests-dummy.m */; };
@@ -64,19 +64,19 @@
 /* Begin PBXFileReference section */
 		01F50F65C822088DE5AC2BF1C00C4300 /* NxCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NxCalendar-umbrella.h"; sourceTree = "<group>"; };
 		04324A305187D6026FD2C2B9407484E8 /* Pods-NxCalendar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NxCalendar_Example-umbrella.h"; sourceTree = "<group>"; };
+		0DD6B1B027A2E8B4006F679C /* NxCalendarHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NxCalendarHeaderView.swift; path = NxCalendar/Classes/NxCalendarHeaderView.swift; sourceTree = "<group>"; };
+		0DD6B1B127A2E8B4006F679C /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIFont+Extension.swift"; path = "NxCalendar/Classes/UIFont+Extension.swift"; sourceTree = "<group>"; };
+		0DD6B1B227A2E8B4006F679C /* AssetsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssetsProvider.swift; path = NxCalendar/Classes/AssetsProvider.swift; sourceTree = "<group>"; };
+		0DD6B1B327A2E8B4006F679C /* NxCalendarCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NxCalendarCollectionViewCell.swift; path = NxCalendar/Classes/NxCalendarCollectionViewCell.swift; sourceTree = "<group>"; };
+		0DD6B1B427A2E8B4006F679C /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Extension.swift"; path = "NxCalendar/Classes/Date+Extension.swift"; sourceTree = "<group>"; };
+		0DD6B1B527A2E8B4006F679C /* MonthMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonthMetadata.swift; path = NxCalendar/Classes/MonthMetadata.swift; sourceTree = "<group>"; };
+		0DD6B1B627A2E8B4006F679C /* Calendar+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Calendar+Extension.swift"; path = "NxCalendar/Classes/Calendar+Extension.swift"; sourceTree = "<group>"; };
+		0DD6B1B727A2E8B4006F679C /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Day.swift; path = NxCalendar/Classes/Day.swift; sourceTree = "<group>"; };
+		0DD6B1B827A2E8B4006F679C /* NxCalendarService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NxCalendarService.swift; path = NxCalendar/Classes/NxCalendarService.swift; sourceTree = "<group>"; };
+		0DD6B1B927A2E8B4006F679C /* NxCalendarConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NxCalendarConfiguration.swift; path = NxCalendar/Classes/NxCalendarConfiguration.swift; sourceTree = "<group>"; };
+		0DD6B1BA27A2E8B4006F679C /* NxCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NxCalendarView.swift; path = NxCalendar/Classes/NxCalendarView.swift; sourceTree = "<group>"; };
 		0DDFBA6127A2D1EC00E9DDBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DDFBA6427A2D1EC00E9DDBC /* DMSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Bold.ttf"; sourceTree = "<group>"; };
-		0DDFBA6627A2D1EC00E9DDBC /* NxCalendarHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NxCalendarHeaderView.swift; sourceTree = "<group>"; };
-		0DDFBA6727A2D1EC00E9DDBC /* NxCalendarCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NxCalendarCollectionViewCell.swift; sourceTree = "<group>"; };
-		0DDFBA6827A2D1EC00E9DDBC /* NxCalendarService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NxCalendarService.swift; sourceTree = "<group>"; };
-		0DDFBA6B27A2D1EC00E9DDBC /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
-		0DDFBA6C27A2D1EC00E9DDBC /* MonthMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthMetadata.swift; sourceTree = "<group>"; };
-		0DDFBA6D27A2D1EC00E9DDBC /* NxCalendarConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NxCalendarConfiguration.swift; sourceTree = "<group>"; };
-		0DDFBA6F27A2D1EC00E9DDBC /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
-		0DDFBA7027A2D1EC00E9DDBC /* Calendar+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Calendar+Extension.swift"; sourceTree = "<group>"; };
-		0DDFBA7127A2D1EC00E9DDBC /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
-		0DDFBA7327A2D1EC00E9DDBC /* AssetsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsProvider.swift; sourceTree = "<group>"; };
-		0DDFBA7427A2D1EC00E9DDBC /* NxCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NxCalendarView.swift; sourceTree = "<group>"; };
 		0F257B051F0412B53214128E473FF82F /* Pods-NxCalendar_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NxCalendar_Tests.modulemap"; sourceTree = "<group>"; };
 		14B818C0FB7737C6FC9A98914E97170B /* Pods-NxCalendar_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NxCalendar_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		150073A4F1A1509297D163160D573272 /* NxCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NxCalendar-prefix.pch"; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		35DD2C92799D583CFC5CC5C4F650C708 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3E28A9F4CC58902A99238190C2D685AF /* NxCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NxCalendar.debug.xcconfig; sourceTree = "<group>"; };
 		4B1DA62F8022DEB4142BBB9745F3B1FE /* NxCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NxCalendar-Info.plist"; sourceTree = "<group>"; };
-		4B826B95417148EB5D6411103E08C244 /* NxCalendar */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NxCalendar; path = NxCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B826B95417148EB5D6411103E08C244 /* NxCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NxCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B8A7EA3FFD43F6D9F1B627004E74E55 /* Pods-NxCalendar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NxCalendar_Example-frameworks.sh"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7A5EDA4361FF9CC9764DD6B7EE6C97BE /* NxCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NxCalendar-dummy.m"; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		B11680E2D40640730A101DAD261DDC2A /* Pods-NxCalendar_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NxCalendar_Tests"; path = Pods_NxCalendar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C47F45015DF1FC443C6FFDEC5BB119 /* Pods-NxCalendar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NxCalendar_Example-dummy.m"; sourceTree = "<group>"; };
 		BB4954157DD15DD45BFD64AAF0FC38A5 /* Pods-NxCalendar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NxCalendar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C4D765EBD0DF3F7E89EA5B7FB89602BE /* Pods-NxCalendar_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NxCalendar_Example"; path = Pods_NxCalendar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4D765EBD0DF3F7E89EA5B7FB89602BE /* Pods_NxCalendar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NxCalendar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C96385F231C1CCB5E2BB0B3F7E23BC /* NxCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NxCalendar.modulemap; sourceTree = "<group>"; };
 		D7D24DBE572BBFAA50B185B1D3A3907F /* Pods-NxCalendar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NxCalendar_Example.modulemap"; sourceTree = "<group>"; };
 		DB47CC0EB7D68A09985853582512224F /* Pods-NxCalendar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NxCalendar_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,24 +153,6 @@
 			path = "Target Support Files/Pods-NxCalendar_Tests";
 			sourceTree = "<group>";
 		};
-		0DD6B1AF27A2E4DA006F679C /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				0DDFBA7427A2D1EC00E9DDBC /* NxCalendarView.swift */,
-				0DDFBA6F27A2D1EC00E9DDBC /* UIFont+Extension.swift */,
-				0DDFBA7027A2D1EC00E9DDBC /* Calendar+Extension.swift */,
-				0DDFBA7127A2D1EC00E9DDBC /* Date+Extension.swift */,
-				0DDFBA6B27A2D1EC00E9DDBC /* Day.swift */,
-				0DDFBA6C27A2D1EC00E9DDBC /* MonthMetadata.swift */,
-				0DDFBA6D27A2D1EC00E9DDBC /* NxCalendarConfiguration.swift */,
-				0DDFBA6627A2D1EC00E9DDBC /* NxCalendarHeaderView.swift */,
-				0DDFBA6727A2D1EC00E9DDBC /* NxCalendarCollectionViewCell.swift */,
-				0DDFBA6827A2D1EC00E9DDBC /* NxCalendarService.swift */,
-				0DDFBA7327A2D1EC00E9DDBC /* AssetsProvider.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		0DDFBA6027A2D1EC00E9DDBC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,44 +174,6 @@
 			children = (
 			);
 			path = DMSans;
-			sourceTree = "<group>";
-		};
-		0DDFBA6527A2D1EC00E9DDBC /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				0DDFBA6927A2D1EC00E9DDBC /* Common */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		0DDFBA6927A2D1EC00E9DDBC /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				0DDFBA6A27A2D1EC00E9DDBC /* Models */,
-				0DDFBA6E27A2D1EC00E9DDBC /* Extensions */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		0DDFBA6A27A2D1EC00E9DDBC /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		0DDFBA6E27A2D1EC00E9DDBC /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		0DDFBA7227A2D1EC00E9DDBC /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		2B31FF0C671CBDC485EEFFCC3724E53B /* Pods-NxCalendar_Example */ = {
@@ -268,8 +212,8 @@
 		84BE1C71699D374C7761EBFE15C0FA63 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4B826B95417148EB5D6411103E08C244 /* NxCalendar */,
-				C4D765EBD0DF3F7E89EA5B7FB89602BE /* Pods-NxCalendar_Example */,
+				4B826B95417148EB5D6411103E08C244 /* NxCalendar.framework */,
+				C4D765EBD0DF3F7E89EA5B7FB89602BE /* Pods_NxCalendar_Example.framework */,
 				B11680E2D40640730A101DAD261DDC2A /* Pods-NxCalendar_Tests */,
 			);
 			name = Products;
@@ -306,12 +250,20 @@
 		D5D6F4A2BF12291B488DF194CD2E8CE8 /* NxCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				0DD6B1AF27A2E4DA006F679C /* Classes */,
+				0DD6B1B227A2E8B4006F679C /* AssetsProvider.swift */,
+				0DD6B1B627A2E8B4006F679C /* Calendar+Extension.swift */,
+				0DD6B1B427A2E8B4006F679C /* Date+Extension.swift */,
+				0DD6B1B727A2E8B4006F679C /* Day.swift */,
+				0DD6B1B527A2E8B4006F679C /* MonthMetadata.swift */,
+				0DD6B1B327A2E8B4006F679C /* NxCalendarCollectionViewCell.swift */,
+				0DD6B1B927A2E8B4006F679C /* NxCalendarConfiguration.swift */,
+				0DD6B1B027A2E8B4006F679C /* NxCalendarHeaderView.swift */,
+				0DD6B1B827A2E8B4006F679C /* NxCalendarService.swift */,
+				0DD6B1BA27A2E8B4006F679C /* NxCalendarView.swift */,
+				0DD6B1B127A2E8B4006F679C /* UIFont+Extension.swift */,
 				0DDFBA6427A2D1EC00E9DDBC /* DMSans-Bold.ttf */,
 				0DDFBA6127A2D1EC00E9DDBC /* Assets.xcassets */,
-				0DDFBA7227A2D1EC00E9DDBC /* Helpers */,
 				0DDFBA6027A2D1EC00E9DDBC /* Resources */,
-				0DDFBA6527A2D1EC00E9DDBC /* Source */,
 				E6308B8970EDB25951DA8C827036224B /* Pod */,
 				DC39B245B571107AD189945D7623D7E9 /* Support Files */,
 			);
@@ -389,7 +341,7 @@
 			);
 			name = NxCalendar;
 			productName = NxCalendar;
-			productReference = 4B826B95417148EB5D6411103E08C244 /* NxCalendar */;
+			productReference = 4B826B95417148EB5D6411103E08C244 /* NxCalendar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4AA58FE09FE8167DBDD69032BCEFD638 /* Pods-NxCalendar_Example */ = {
@@ -408,7 +360,7 @@
 			);
 			name = "Pods-NxCalendar_Example";
 			productName = Pods_NxCalendar_Example;
-			productReference = C4D765EBD0DF3F7E89EA5B7FB89602BE /* Pods-NxCalendar_Example */;
+			productReference = C4D765EBD0DF3F7E89EA5B7FB89602BE /* Pods_NxCalendar_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F0D4A79D93BE7D4F7869AED686B55318 /* Pods-NxCalendar_Tests */ = {
@@ -438,6 +390,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1177406FF28CFD61928837CF6D01E5F2 = {
+						LastSwiftMigration = 1320;
+					};
+					4AA58FE09FE8167DBDD69032BCEFD638 = {
+						LastSwiftMigration = 1320;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -492,18 +452,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD6B1BE27A2E8B4006F679C /* UIFont+Extension.swift in Sources */,
+				0DD6B1C627A2E8B4006F679C /* MonthMetadata.swift in Sources */,
+				0DD6B1D027A2E8B4006F679C /* NxCalendarView.swift in Sources */,
+				0DD6B1C027A2E8B4006F679C /* AssetsProvider.swift in Sources */,
+				0DD6B1C227A2E8B4006F679C /* NxCalendarCollectionViewCell.swift in Sources */,
+				0DD6B1CE27A2E8B4006F679C /* NxCalendarConfiguration.swift in Sources */,
 				3E646C01D425AB6D5F6F0CDBE8660E97 /* Pods-NxCalendar_Example-dummy.m in Sources */,
-				0DDFBA8827A2D1ED00E9DDBC /* Calendar+Extension.swift in Sources */,
-				0DDFBA8E27A2D1ED00E9DDBC /* NxCalendarView.swift in Sources */,
-				0DDFBA8227A2D1ED00E9DDBC /* MonthMetadata.swift in Sources */,
-				0DDFBA7A27A2D1EC00E9DDBC /* NxCalendarHeaderView.swift in Sources */,
-				0DDFBA7C27A2D1ED00E9DDBC /* NxCalendarCollectionViewCell.swift in Sources */,
-				0DDFBA8A27A2D1ED00E9DDBC /* Date+Extension.swift in Sources */,
-				0DDFBA8027A2D1ED00E9DDBC /* Day.swift in Sources */,
-				0DDFBA8C27A2D1ED00E9DDBC /* AssetsProvider.swift in Sources */,
-				0DDFBA7E27A2D1ED00E9DDBC /* NxCalendarService.swift in Sources */,
-				0DDFBA8627A2D1ED00E9DDBC /* UIFont+Extension.swift in Sources */,
-				0DDFBA8427A2D1ED00E9DDBC /* NxCalendarConfiguration.swift in Sources */,
+				0DD6B1CA27A2E8B4006F679C /* Day.swift in Sources */,
+				0DD6B1C827A2E8B4006F679C /* Calendar+Extension.swift in Sources */,
+				0DD6B1CC27A2E8B4006F679C /* NxCalendarService.swift in Sources */,
+				0DD6B1BC27A2E8B4006F679C /* NxCalendarHeaderView.swift in Sources */,
+				0DD6B1C427A2E8B4006F679C /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,18 +479,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD6B1BD27A2E8B4006F679C /* UIFont+Extension.swift in Sources */,
+				0DD6B1C527A2E8B4006F679C /* MonthMetadata.swift in Sources */,
+				0DD6B1CF27A2E8B4006F679C /* NxCalendarView.swift in Sources */,
+				0DD6B1BF27A2E8B4006F679C /* AssetsProvider.swift in Sources */,
+				0DD6B1C127A2E8B4006F679C /* NxCalendarCollectionViewCell.swift in Sources */,
+				0DD6B1CD27A2E8B4006F679C /* NxCalendarConfiguration.swift in Sources */,
 				C9AA562CB66DE16E842831086989A4DF /* NxCalendar-dummy.m in Sources */,
-				0DDFBA8727A2D1ED00E9DDBC /* Calendar+Extension.swift in Sources */,
-				0DDFBA8D27A2D1ED00E9DDBC /* NxCalendarView.swift in Sources */,
-				0DDFBA8127A2D1ED00E9DDBC /* MonthMetadata.swift in Sources */,
-				0DDFBA7927A2D1EC00E9DDBC /* NxCalendarHeaderView.swift in Sources */,
-				0DDFBA7B27A2D1ED00E9DDBC /* NxCalendarCollectionViewCell.swift in Sources */,
-				0DDFBA8927A2D1ED00E9DDBC /* Date+Extension.swift in Sources */,
-				0DDFBA7F27A2D1ED00E9DDBC /* Day.swift in Sources */,
-				0DDFBA8B27A2D1ED00E9DDBC /* AssetsProvider.swift in Sources */,
-				0DDFBA7D27A2D1ED00E9DDBC /* NxCalendarService.swift in Sources */,
-				0DDFBA8527A2D1ED00E9DDBC /* UIFont+Extension.swift in Sources */,
-				0DDFBA8327A2D1ED00E9DDBC /* NxCalendarConfiguration.swift in Sources */,
+				0DD6B1C927A2E8B4006F679C /* Day.swift in Sources */,
+				0DD6B1C727A2E8B4006F679C /* Calendar+Extension.swift in Sources */,
+				0DD6B1CB27A2E8B4006F679C /* NxCalendarService.swift in Sources */,
+				0DD6B1BB27A2E8B4006F679C /* NxCalendarHeaderView.swift in Sources */,
+				0DD6B1C327A2E8B4006F679C /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,6 +648,7 @@
 			baseConfigurationReference = 1E0D2231D7B496EA1EEF077D54BA7CD9 /* Pods-NxCalendar_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -709,6 +670,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -719,6 +682,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1779E5838BA2282A4C3AF60604059A5B /* NxCalendar.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -811,6 +775,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3E28A9F4CC58902A99238190C2D685AF /* NxCalendar.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -830,6 +795,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -842,6 +808,7 @@
 			baseConfigurationReference = DB47CC0EB7D68A09985853582512224F /* Pods-NxCalendar_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -863,6 +830,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
