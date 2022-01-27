@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NxCalendar'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'A short description of NxCalendar.'
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
   
    s.resource_bundles = {
-     'NxCalendar' => ['NxCalendar/Assets/*.png']
+     'NxCalendar' => ['NxCalendar/Assets/*.png', 'NxCalendar/Assets.xcassets/*']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

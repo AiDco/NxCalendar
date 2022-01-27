@@ -153,29 +153,6 @@
 			path = "Target Support Files/Pods-NxCalendar_Tests";
 			sourceTree = "<group>";
 		};
-		0DDFBA6027A2D1EC00E9DDBC /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				0DDFBA6227A2D1EC00E9DDBC /* Fonts */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		0DDFBA6227A2D1EC00E9DDBC /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				0DDFBA6327A2D1EC00E9DDBC /* DMSans */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		0DDFBA6327A2D1EC00E9DDBC /* DMSans */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DMSans;
-			sourceTree = "<group>";
-		};
 		2B31FF0C671CBDC485EEFFCC3724E53B /* Pods-NxCalendar_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,7 +240,6 @@
 				0DD6B1B827A2E8B4006F679C /* NxCalendarService.swift */,
 				0DD6B1BA27A2E8B4006F679C /* NxCalendarView.swift */,
 				0DD6B1B127A2E8B4006F679C /* UIFont+Extension.swift */,
-				0DDFBA6027A2D1EC00E9DDBC /* Resources */,
 				E6308B8970EDB25951DA8C827036224B /* Pod */,
 				DC39B245B571107AD189945D7623D7E9 /* Support Files */,
 			);

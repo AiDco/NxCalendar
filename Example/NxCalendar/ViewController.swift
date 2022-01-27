@@ -69,7 +69,7 @@ class ViewController: UIViewController {
 //                    ],
 //                    selectedDate: testDate5
 //            ),
-            showDatesOutMonth: true,
+            showDatesOutMonth: false,
             isMonthSwitchingEnabled: true, didSelectDateCompletionHandler: {
                 print("tapped")
             }
