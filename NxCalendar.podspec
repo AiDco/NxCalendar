@@ -32,8 +32,10 @@ Pod::Spec.new do |s|
 
   
    s.resource_bundles = {
-     'NxCalendar' => ['NxCalendar/Assets/*.{storyboard,xib,strings,xcassets,png,pdf}']
+     'NxCalendar' => ['NxCalendar/Assets/*.png']
    }
+
+   s.resources = 'NxCalendar/Assets/**'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'UIKit'
