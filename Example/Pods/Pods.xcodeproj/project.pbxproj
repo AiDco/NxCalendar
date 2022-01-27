@@ -153,6 +153,24 @@
 			path = "Target Support Files/Pods-NxCalendar_Tests";
 			sourceTree = "<group>";
 		};
+		0DD6B1AF27A2E4DA006F679C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0DDFBA7427A2D1EC00E9DDBC /* NxCalendarView.swift */,
+				0DDFBA6F27A2D1EC00E9DDBC /* UIFont+Extension.swift */,
+				0DDFBA7027A2D1EC00E9DDBC /* Calendar+Extension.swift */,
+				0DDFBA7127A2D1EC00E9DDBC /* Date+Extension.swift */,
+				0DDFBA6B27A2D1EC00E9DDBC /* Day.swift */,
+				0DDFBA6C27A2D1EC00E9DDBC /* MonthMetadata.swift */,
+				0DDFBA6D27A2D1EC00E9DDBC /* NxCalendarConfiguration.swift */,
+				0DDFBA6627A2D1EC00E9DDBC /* NxCalendarHeaderView.swift */,
+				0DDFBA6727A2D1EC00E9DDBC /* NxCalendarCollectionViewCell.swift */,
+				0DDFBA6827A2D1EC00E9DDBC /* NxCalendarService.swift */,
+				0DDFBA7327A2D1EC00E9DDBC /* AssetsProvider.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		0DDFBA6027A2D1EC00E9DDBC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,8 +228,6 @@
 		0DDFBA7227A2D1EC00E9DDBC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				0DDFBA7427A2D1EC00E9DDBC /* NxCalendarView.swift */,
-				0DDFBA7327A2D1EC00E9DDBC /* AssetsProvider.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -290,18 +306,10 @@
 		D5D6F4A2BF12291B488DF194CD2E8CE8 /* NxCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				0DD6B1AF27A2E4DA006F679C /* Classes */,
 				0DDFBA6427A2D1EC00E9DDBC /* DMSans-Bold.ttf */,
 				0DDFBA6127A2D1EC00E9DDBC /* Assets.xcassets */,
 				0DDFBA7227A2D1EC00E9DDBC /* Helpers */,
-				0DDFBA6F27A2D1EC00E9DDBC /* UIFont+Extension.swift */,
-				0DDFBA7027A2D1EC00E9DDBC /* Calendar+Extension.swift */,
-				0DDFBA7127A2D1EC00E9DDBC /* Date+Extension.swift */,
-				0DDFBA6B27A2D1EC00E9DDBC /* Day.swift */,
-				0DDFBA6C27A2D1EC00E9DDBC /* MonthMetadata.swift */,
-				0DDFBA6D27A2D1EC00E9DDBC /* NxCalendarConfiguration.swift */,
-				0DDFBA6627A2D1EC00E9DDBC /* NxCalendarHeaderView.swift */,
-				0DDFBA6727A2D1EC00E9DDBC /* NxCalendarCollectionViewCell.swift */,
-				0DDFBA6827A2D1EC00E9DDBC /* NxCalendarService.swift */,
 				0DDFBA6027A2D1EC00E9DDBC /* Resources */,
 				0DDFBA6527A2D1EC00E9DDBC /* Source */,
 				E6308B8970EDB25951DA8C827036224B /* Pod */,
