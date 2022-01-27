@@ -29,10 +29,10 @@
 		0DD6B1CE27A2E8B4006F679C /* NxCalendarConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1B927A2E8B4006F679C /* NxCalendarConfiguration.swift */; };
 		0DD6B1CF27A2E8B4006F679C /* NxCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1BA27A2E8B4006F679C /* NxCalendarView.swift */; };
 		0DD6B1D027A2E8B4006F679C /* NxCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6B1BA27A2E8B4006F679C /* NxCalendarView.swift */; };
-		0DDFBA7527A2D1EC00E9DDBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6127A2D1EC00E9DDBC /* Assets.xcassets */; };
-		0DDFBA7627A2D1EC00E9DDBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6127A2D1EC00E9DDBC /* Assets.xcassets */; };
-		0DDFBA7727A2D1EC00E9DDBC /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6427A2D1EC00E9DDBC /* DMSans-Bold.ttf */; };
-		0DDFBA7827A2D1EC00E9DDBC /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DDFBA6427A2D1EC00E9DDBC /* DMSans-Bold.ttf */; };
+		0DD6B1D327A2E929006F679C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DD6B1D127A2E929006F679C /* Assets.xcassets */; };
+		0DD6B1D427A2E929006F679C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DD6B1D127A2E929006F679C /* Assets.xcassets */; };
+		0DD6B1D527A2E929006F679C /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DD6B1D227A2E929006F679C /* DMSans-Bold.ttf */; };
+		0DD6B1D627A2E929006F679C /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DD6B1D227A2E929006F679C /* DMSans-Bold.ttf */; };
 		229C03DD05643D66FFAA98481A41A8C1 /* Pods-NxCalendar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB31CA2AF853C632642FABE645FBEF3 /* Pods-NxCalendar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B752C8852F35F353724B67DED85D722 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		324D4774EE56F45412CB8C82D11D8D5D /* Pods-NxCalendar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF07CA7231D59D59622DBB3F845E041C /* Pods-NxCalendar_Tests-dummy.m */; };
@@ -75,8 +75,8 @@
 		0DD6B1B827A2E8B4006F679C /* NxCalendarService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NxCalendarService.swift; path = NxCalendar/Classes/NxCalendarService.swift; sourceTree = "<group>"; };
 		0DD6B1B927A2E8B4006F679C /* NxCalendarConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NxCalendarConfiguration.swift; path = NxCalendar/Classes/NxCalendarConfiguration.swift; sourceTree = "<group>"; };
 		0DD6B1BA27A2E8B4006F679C /* NxCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NxCalendarView.swift; path = NxCalendar/Classes/NxCalendarView.swift; sourceTree = "<group>"; };
-		0DDFBA6127A2D1EC00E9DDBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0DDFBA6427A2D1EC00E9DDBC /* DMSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Bold.ttf"; sourceTree = "<group>"; };
+		0DD6B1D127A2E929006F679C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = NxCalendar/Assets.xcassets; sourceTree = "<group>"; };
+		0DD6B1D227A2E929006F679C /* DMSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DMSans-Bold.ttf"; path = "NxCalendar/DMSans-Bold.ttf"; sourceTree = "<group>"; };
 		0F257B051F0412B53214128E473FF82F /* Pods-NxCalendar_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NxCalendar_Tests.modulemap"; sourceTree = "<group>"; };
 		14B818C0FB7737C6FC9A98914E97170B /* Pods-NxCalendar_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NxCalendar_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		150073A4F1A1509297D163160D573272 /* NxCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NxCalendar-prefix.pch"; sourceTree = "<group>"; };
@@ -250,6 +250,8 @@
 		D5D6F4A2BF12291B488DF194CD2E8CE8 /* NxCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				0DD6B1D127A2E929006F679C /* Assets.xcassets */,
+				0DD6B1D227A2E929006F679C /* DMSans-Bold.ttf */,
 				0DD6B1B227A2E8B4006F679C /* AssetsProvider.swift */,
 				0DD6B1B627A2E8B4006F679C /* Calendar+Extension.swift */,
 				0DD6B1B427A2E8B4006F679C /* Date+Extension.swift */,
@@ -261,8 +263,6 @@
 				0DD6B1B827A2E8B4006F679C /* NxCalendarService.swift */,
 				0DD6B1BA27A2E8B4006F679C /* NxCalendarView.swift */,
 				0DD6B1B127A2E8B4006F679C /* UIFont+Extension.swift */,
-				0DDFBA6427A2D1EC00E9DDBC /* DMSans-Bold.ttf */,
-				0DDFBA6127A2D1EC00E9DDBC /* Assets.xcassets */,
 				0DDFBA6027A2D1EC00E9DDBC /* Resources */,
 				E6308B8970EDB25951DA8C827036224B /* Pod */,
 				DC39B245B571107AD189945D7623D7E9 /* Support Files */,
@@ -424,8 +424,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DDFBA7527A2D1EC00E9DDBC /* Assets.xcassets in Resources */,
-				0DDFBA7727A2D1EC00E9DDBC /* DMSans-Bold.ttf in Resources */,
+				0DD6B1D327A2E929006F679C /* Assets.xcassets in Resources */,
+				0DD6B1D527A2E929006F679C /* DMSans-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,8 +433,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DDFBA7627A2D1EC00E9DDBC /* Assets.xcassets in Resources */,
-				0DDFBA7827A2D1EC00E9DDBC /* DMSans-Bold.ttf in Resources */,
+				0DD6B1D427A2E929006F679C /* Assets.xcassets in Resources */,
+				0DD6B1D627A2E929006F679C /* DMSans-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
