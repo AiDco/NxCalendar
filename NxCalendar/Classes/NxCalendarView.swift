@@ -7,19 +7,15 @@
 
 import UIKit
 
-public protocol MonthDidChangeDelegate {
-    func monthDidChange(contentSize: CGFloat)
-}
-
 public final class NxCalendarView: UIView {
     // MARK: - Private Properties
     private let calendarService: NxCalendarService
     
     
     // MARK: - Properties
-    public var delegate: MonthDidChangeDelegate?
+    public weak var delegate: NxCalendarViewDelegate?
     
-    public var didSelectDateCompletionHandler: ((Date) -> Void)?
+    public var didSelectDateCompletionHandler: (() -> Void)?
     
     // MARK: - UIBricks
     private lazy var headerView = NxCalendarHeaderView(using: calendarService)
@@ -64,6 +60,8 @@ public final class NxCalendarView: UIView {
         super.init(frame: frame)
         addSubview(mainStackView)
         
+        didSelectDateCompletionHandler = calendarService.configuration.didSelectDateCompletionHandler
+        
         NSLayoutConstraint.activate(
             [
                 mainStackView.topAnchor.constraint(equalTo: topAnchor),
@@ -72,7 +70,7 @@ public final class NxCalendarView: UIView {
                 mainStackView.bottomAnchor.constraint(equalTo: bottomAnchor)
             ]
         )
-
+        
         collectionView.register(
             CalendarDateCollectionViewCell.self,
             forCellWithReuseIdentifier: CalendarDateCollectionViewCell.reuseIdentifier
@@ -82,10 +80,33 @@ public final class NxCalendarView: UIView {
             headerView.monthYearLabel.text = calendarService
                 .monthYearDateFormatter
                 .string(from: date)
-            collectionView.reloadData()
             
-            delegate?.monthDidChange(contentSize: collectionView.contentSize.height + headerView.frame.height)
+            if let newDestinations = delegate?.wellbeingDates(for: date.get(.month)),
+               case .wellbeing(_) = calendarService.configuration.calendarType {
+                calendarService.wellbeingDatesFromDestinationCompletionHandler(newDestinations)
+            }
+            
+            if let newDestinations = delegate?.sessionDates(for: date.get(.month)),
+               case .session(_, _) = calendarService.configuration.calendarType {
+                calendarService.sessionDatesFromDestinationCompletionHandler(newDestinations, nil)
+            }
+            
+            calendarService.dates = calendarService.dates.unique
+            collectionView.reloadData()
         }
+    }
+    
+    public func updateWellbeingDates(dates: [(Date, Day.DayType.Wellbeing)]) {
+        calendarService.dates.removeAll { date in
+            if dates.contains(where: { $0.0 == date.0 }) {
+                return true
+            }
+            return false
+        }
+        calendarService.dates += dates.map {
+            ($0.0.erasedFormat ?? Date(), .wellbeing($0.1))
+        }
+        collectionView.reloadData()
     }
     
     public required init?(coder: NSCoder) {
@@ -115,11 +136,11 @@ extension NxCalendarView: UICollectionViewDataSource {
             : nil
             
             let day = calendarService.days[indexPath.item]
-        
+            
             let nextDay = indexPath.item + 1 < calendarService.days.count
             ? calendarService.days[indexPath.item + 1]
             : nil
-                
+            
             let nonCurrentMonthDayCondition = !calendarService.configuration.showDatesOutMonth && !day.isCurrentMonthDay
             
             let leftLineViewSelectedCondition  = previousDay?.type != .wellbeing(.allDone)
@@ -160,31 +181,17 @@ extension NxCalendarView: UICollectionViewDataSource {
             cell.rightLineView.isHidden = true
             cell.leftLineView.isHidden = true
         }
-    
+        
         return cell
     }
     
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if !calendarService.days[indexPath.row].isCurrentMonthDay && !calendarService.configuration.showDatesOutMonth {
-            return
-        } else if case .session(_, _) = calendarService.configuration.calendarType {
-            let beforeIndex = calendarService.days.firstIndex { $0.isSelected == true }
-            
-            calendarService.days = calendarService.days.map {
-                var day = $0
-                day.isSelected = false
-                return day
-            }
-            
-            calendarService.days[indexPath.row].isSelected = true
-            
-            if let index = beforeIndex {
-                didSelectDateCompletionHandler?(calendarService.days[indexPath.row].date)
-                collectionView.reloadItems(at: [indexPath, IndexPath(item: index, section: 0)])
-            }
-        } else if case .wellbeing(_) = calendarService.configuration.calendarType  {
-//            print(calendarService.days[indexPath.row].date)
-            didSelectDateCompletionHandler?(calendarService.days[indexPath.row].date)
+        if let beforeIndexPath = calendarService.didSelectDateCompletionHandler(indexPath) {
+            collectionView.reloadItems(
+                at: [
+                    indexPath, beforeIndexPath
+                ]
+            )
         }
     }
 }
@@ -205,4 +212,12 @@ extension NxCalendarView: UICollectionViewDelegateFlowLayout {
         let ceilWidth = addOne ? side + 1 : side
         return CGSize(width: ceilWidth, height: side)
     }
+}
+
+public func getDateFor(year: Int, month: Int, day: Int) -> Date? {
+    var dateComponents = DateComponents()
+    dateComponents.year = year
+    dateComponents.month = month
+    dateComponents.day = day
+    return Calendar.current.date(from: dateComponents)
 }

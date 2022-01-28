@@ -26,6 +26,10 @@ extension UIFont {
     
     static func boldDMSans(of size: CGFloat) -> UIFont {
         registerFont(with: "DMSans-Bold")
-        return UIFont(name: "DMSans-Bold", size: size)!
+        if let font = UIFont(name: "DMSans-Bold", size: size) {
+            return font
+        } else {
+            return UIFont.systemFont(ofSize: size)
+        }
     }
 }

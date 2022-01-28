@@ -87,7 +87,7 @@ class ViewController: UIViewController {
 
         calendarView.translatesAutoresizingMaskIntoConstraints = false
 
-        calendarView.delegate = self
+//        calendarView.delegate = self
 
         let contentHeightAnchor = contentView.heightAnchor.constraint(equalTo: scrollView.heightAnchor)
         contentHeightAnchor.priority = .defaultLow
@@ -135,12 +135,12 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: MonthDidChangeDelegate {
-    func monthDidChange(contentSize: CGFloat) {
-
-        collectionViewHeightAnchor.constant = contentSize
-        view.setNeedsLayout()
-    }
-}
+//extension ViewController: MonthDidChangeDelegate {
+//    func monthDidChange(contentSize: CGFloat) {
+//
+//        collectionViewHeightAnchor.constant = contentSize
+//        view.setNeedsLayout()
+//    }
+//}
 
 

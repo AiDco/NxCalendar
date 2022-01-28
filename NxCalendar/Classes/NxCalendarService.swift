@@ -9,14 +9,14 @@ import UIKit
 
 final class NxCalendarService {
     // MARK: - Private Properties
-    private let dates: [(Date, Day.DayType)]
-    
     private var startDate: Date = Date()
     
     private var endDate: Date = Date()
 
     // MARK: - Properties
     let configuration: NxCalendarConfiguration
+    
+    var dates: [(Date, Day.DayType)] = []
     
     lazy var days: [Day] = generateDaysInMonth(for: currentDate)
     
@@ -28,6 +28,31 @@ final class NxCalendarService {
     }
     
     lazy var didChangeCurrentDateCompletionHandler: ((Date) -> Void)? = nil
+    
+    lazy var didSelectDateCompletionHandler: (IndexPath) -> (IndexPath?) = { [unowned self] indexPath in
+        if !days[indexPath.row].isCurrentMonthDay
+            && !configuration.showDatesOutMonth
+            || days[indexPath.row].type == .session(.busy) { return nil }
+        
+        else if case .session(_, _) = configuration.calendarType {
+            let beforeIndex = days.firstIndex { $0.isSelected == true }
+            
+            days = days.map {
+                var day = $0
+                day.isSelected = false
+                return day
+            }
+            
+            days[indexPath.row].isSelected = true
+            
+            if let index = beforeIndex {
+                configuration.didSelectDateCompletionHandler()
+                return IndexPath(item: index, section: 0)
+            }
+        }
+        
+        return nil
+    }
     
     lazy var didPressLeftButtonArrowCompletionHandler: () -> Bool = { [unowned self] in
         let previousMonth = Calendar.current.date(
@@ -84,55 +109,65 @@ final class NxCalendarService {
         return dateFormatter
     }()
     
+    lazy var wellbeingDatesFromDestinationCompletionHandler: ([NxCalendarConfiguration.WellbeingDestinnation]) -> () = { [unowned self] destinations in
+        dates += destinations
+            .flatMap { destination -> [(Date, Day.DayType)] in
+                switch destination {
+                case let .selectedDate(date, dayType):
+                    return [(date.erasedFormat ?? Date(), .wellbeing(dayType))]
+                case let .selectedDates(startDate, endDate, daysType):
+                    let dates: [Date]
+                    
+                    if startDate > endDate {
+                        dates = Date.dates(from: endDate, to: startDate)
+                    } else {
+                        dates = Date.dates(from: startDate, to: endDate)
+                    }
+                    
+                    return  dates.map { ($0, .wellbeing(daysType)) }
+                }
+            }
+            .sorted { $0.0 < $1.0 }
+        
+        dates = dates.unique
+    }
+    
+    lazy var sessionDatesFromDestinationCompletionHandler: ([NxCalendarConfiguration.SessionDestination], Date?) -> () = { [unowned self] destinations, selectedDate in
+        dates += destinations
+            .flatMap { destination -> [(Date, Day.DayType)] in
+                switch destination {
+                case let .busyDate(date):
+                    return [(date.erasedFormat ?? Date(), .session(.busy))]
+                case let .busyDates(startDate, endDate):
+                    let dates: [Date]
+                    
+                    if startDate > endDate {
+                        dates = Date.dates(from: endDate, to: startDate)
+                    } else {
+                        dates = Date.dates(from: startDate, to: endDate)
+                    }
+                    
+                    if dates.contains(selectedDate?.erasedFormat ?? Date()) {
+                        print("The selected date must be on a free day")
+                    }
+                    
+                    return  dates.map { ($0, .session(.busy)) }
+                }
+            }
+            .sorted { $0.0 < $1.0 }
+        
+        dates = dates.unique
+    }
+    
     // MARK: - Initialization
     init(with configuration: NxCalendarConfiguration) {
         self.configuration = configuration
         
         switch configuration.calendarType {
         case let .session(destinations, selectedDate):
-            dates = destinations
-                .flatMap { destination -> [(Date, Day.DayType)] in
-                    
-                    switch destination {
-                    case let .busyDate(date):
-                        return [(date.erasedFormat ?? Date(), .session(.busy))]
-                    case let .busyDates(startDate, endDate):
-                        let dates: [Date]
-                        
-                        if startDate > endDate {
-                            dates = Date.dates(from: endDate, to: startDate)
-                        } else {
-                            dates = Date.dates(from: startDate, to: endDate)
-                        }
-                        
-                        if dates.contains(selectedDate.erasedFormat ?? Date()) {
-                            print("The selected date must be on a free day")
-                        }
-                        
-                        return  dates.map { ($0, .session(.busy)) }
-                    }
-                }
-                .sorted { $0.0 < $1.0 }
-            
+            sessionDatesFromDestinationCompletionHandler(destinations, selectedDate)
         case let .wellbeing(destinations):
-            dates = destinations
-                .flatMap { destination -> [(Date, Day.DayType)] in
-                    switch destination {
-                    case let .selectedDate(date, dayType):
-                        return [(date.erasedFormat ?? Date(), .wellbeing(dayType))]
-                    case let .selectedDates(startDate, endDate, daysType):
-                        let dates: [Date]
-                        
-                        if startDate > endDate {
-                            dates = Date.dates(from: endDate, to: startDate)
-                        } else {
-                            dates = Date.dates(from: startDate, to: endDate)
-                        }
-                        
-                        return  dates.map { ($0, .wellbeing(daysType)) }
-                    }
-                }
-                .sorted { $0.0 < $1.0 }
+            wellbeingDatesFromDestinationCompletionHandler(destinations)
         }
         
         if let startDate = dates.first?.0,
@@ -158,10 +193,9 @@ final class NxCalendarService {
             .map { day -> Day in
                 let isCurrentMonthDay = day >= metadata.firstWeekdayNumber
                 
-                let dayOffset =
-                isCurrentMonthDay ?
-                day - metadata.firstWeekdayNumber :
-                -(metadata.firstWeekdayNumber - day)
+                let dayOffset = isCurrentMonthDay
+                ? day - metadata.firstWeekdayNumber
+                : -(metadata.firstWeekdayNumber - day)
                 
                 return generateDay(
                     offsetBy: dayOffset,
