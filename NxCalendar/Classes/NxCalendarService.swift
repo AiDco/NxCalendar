@@ -16,7 +16,11 @@ final class NxCalendarService {
     // MARK: - Properties
     let configuration: NxCalendarConfiguration
     
-    var dates: [(Date, Day.DayType)] = []
+    var dates: [(Date, Day.DayType)] = [] {
+        didSet {
+            days = generateDaysInMonth(for: currentDate)
+        }
+    }
     
     lazy var days: [Day] = generateDaysInMonth(for: currentDate)
     
