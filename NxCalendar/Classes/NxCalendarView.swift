@@ -7,6 +7,10 @@
 
 import UIKit
 
+public protocol MonthDidChangeDelegate: AnyObject {
+    func monthDidChange(firstMothDay: Date)
+}
+
 public final class NxCalendarView: UIView {
     // MARK: - Private Properties
     private let calendarService: NxCalendarService
@@ -14,6 +18,7 @@ public final class NxCalendarView: UIView {
     
     // MARK: - Properties
     public weak var delegate: NxCalendarViewDelegate?
+    public weak var monthDelegate: MonthDidChangeDelegate?
     
     public var didSelectDateCompletionHandler: (() -> Void)?
     
@@ -90,6 +95,8 @@ public final class NxCalendarView: UIView {
                case .session(_, _) = calendarService.configuration.calendarType {
                 calendarService.sessionDatesFromDestinationCompletionHandler(newDestinations, nil)
             }
+
+            monthDelegate?.monthDidChange(firstMothDay: date)
             
             calendarService.dates = calendarService.dates.unique
             collectionView.reloadData()

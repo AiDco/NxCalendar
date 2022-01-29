@@ -9,7 +9,19 @@
 import UIKit
 import NxCalendar
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, NxCalendarViewDelegate {
+    func wellbeingDates(for newMonthNumber: Int) -> [NxCalendarConfiguration.WellbeingDestinnation] {
+
+        print(newMonthNumber)
+        return []
+    }
+
+    func sessionDates(for newMonthNumber: Int) -> [NxCalendarConfiguration.SessionDestination] {
+
+        print(newMonthNumber)
+        return []
+    }
+
     private lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView(frame: .zero)
         scrollView.translatesAutoresizingMaskIntoConstraints = false
@@ -70,7 +82,8 @@ class ViewController: UIViewController {
 //                    selectedDate: testDate5
 //            ),
             showDatesOutMonth: false,
-            isMonthSwitchingEnabled: true, didSelectDateCompletionHandler: {
+            isMonthSwitchingEnabled: true,
+            didSelectDateCompletionHandler: {
                 print("tapped")
             }
         )
@@ -87,7 +100,9 @@ class ViewController: UIViewController {
 
         calendarView.translatesAutoresizingMaskIntoConstraints = false
 
-//        calendarView.delegate = self
+        calendarView.monthDelegate = self
+        calendarView.delegate = self
+
 
         let contentHeightAnchor = contentView.heightAnchor.constraint(equalTo: scrollView.heightAnchor)
         contentHeightAnchor.priority = .defaultLow
@@ -135,12 +150,18 @@ class ViewController: UIViewController {
     }
 }
 
-//extension ViewController: MonthDidChangeDelegate {
-//    func monthDidChange(contentSize: CGFloat) {
-//
-//        collectionViewHeightAnchor.constant = contentSize
-//        view.setNeedsLayout()
-//    }
-//}
+extension ViewController: MonthDidChangeDelegate {
+    func monthDidChange(firstMothDay: Date) {
+        print(firstMothDay.dateWithTimeZone)
+    }
+}
 
+extension Date {
+    var dateWithTimeZone: String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        formatter.timeZone = TimeZone.current
+        return formatter.string(from: self)
+    }
+}
 

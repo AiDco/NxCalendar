@@ -49,6 +49,8 @@ final class NxCalendarService {
                 configuration.didSelectDateCompletionHandler()
                 return IndexPath(item: index, section: 0)
             }
+        } else if case .wellbeing(_) = configuration.calendarType {
+            print(days[indexPath.row].date)
         }
         
         return nil
