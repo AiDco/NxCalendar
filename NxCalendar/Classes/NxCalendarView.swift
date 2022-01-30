@@ -115,6 +115,19 @@ public final class NxCalendarView: UIView {
         }
         collectionView.reloadData()
     }
+
+    public func resetWellbeingDates(dates: [(Date, Day.DayType.Wellbeing)]) {
+        calendarService.dates.removeAll { date in
+            if dates.contains(where: { $0.0 == date.0 }) {
+                return true
+            }
+            return false
+        }
+        calendarService.dates = dates.map {
+            ($0.0.erasedFormat ?? Date(), .wellbeing($0.1))
+        }
+        collectionView.reloadData()
+    }
     
     public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
