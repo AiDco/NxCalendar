@@ -50,11 +50,11 @@ final class NxCalendarService {
             days[indexPath.row].isSelected = true
             
             if let index = beforeIndex {
-                configuration.didSelectDateCompletionHandler()
+                configuration.didSelectDateCompletionHandler(days[indexPath.row].date)
                 return IndexPath(item: index, section: 0)
             }
         } else if case .wellbeing(_) = configuration.calendarType {
-            print(days[indexPath.row].date)
+            configuration.didSelectDateCompletionHandler(days[indexPath.row].date)
         }
         
         return nil

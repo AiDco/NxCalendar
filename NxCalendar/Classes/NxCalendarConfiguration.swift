@@ -9,13 +9,13 @@ public struct NxCalendarConfiguration {
     public let calendarType: CalendarType
     public let showDatesOutMonth: Bool
     public let isMonthSwitchingEnabled: Bool
-    public let didSelectDateCompletionHandler: () -> ()
+    public let didSelectDateCompletionHandler: (Date) -> Void
 
     public init(
         calendarType: CalendarType,
         showDatesOutMonth: Bool,
         isMonthSwitchingEnabled: Bool,
-        didSelectDateCompletionHandler: @escaping () -> ()
+        didSelectDateCompletionHandler: @escaping (Date) -> (Void)
     ) {
         self.calendarType = calendarType
         self.showDatesOutMonth = showDatesOutMonth

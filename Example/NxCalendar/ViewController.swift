@@ -83,8 +83,8 @@ class ViewController: UIViewController, NxCalendarViewDelegate {
 //            ),
             showDatesOutMonth: false,
             isMonthSwitchingEnabled: true,
-            didSelectDateCompletionHandler: {
-                print("tapped")
+            didSelectDateCompletionHandler: { date in
+                print(" \(date) tapped")
             }
         )
         return NxCalendarView(configuration: configuration)

@@ -20,7 +20,7 @@ public final class NxCalendarView: UIView {
     public weak var delegate: NxCalendarViewDelegate?
     public weak var monthDelegate: MonthDidChangeDelegate?
     
-    public var didSelectDateCompletionHandler: (() -> Void)?
+    public var didSelectDateCompletionHandler: ((Date) -> Void)?
     
     // MARK: - UIBricks
     private lazy var headerView = NxCalendarHeaderView(using: calendarService)
