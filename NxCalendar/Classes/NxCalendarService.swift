@@ -12,6 +12,7 @@ final class NxCalendarService {
     private var startDate: Date = Date()
     
     private var endDate: Date = Date()
+    public var weekdayColor: UIColor!
 
     // MARK: - Properties
     let configuration: NxCalendarConfiguration
@@ -168,6 +169,7 @@ final class NxCalendarService {
     // MARK: - Initialization
     init(with configuration: NxCalendarConfiguration) {
         self.configuration = configuration
+        self.weekdayColor = configuration.weekdayColor
         
         switch configuration.calendarType {
         case let .session(destinations, selectedDate):

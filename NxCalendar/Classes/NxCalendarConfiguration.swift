@@ -10,17 +10,20 @@ public struct NxCalendarConfiguration {
     public let showDatesOutMonth: Bool
     public let isMonthSwitchingEnabled: Bool
     public let didSelectDateCompletionHandler: (Date) -> Void
+    public let weekdayColor: UIColor
 
     public init(
         calendarType: CalendarType,
         showDatesOutMonth: Bool,
         isMonthSwitchingEnabled: Bool,
-        didSelectDateCompletionHandler: @escaping (Date) -> (Void)
+        didSelectDateCompletionHandler: @escaping (Date) -> (Void),
+        weekdayColor: UIColor
     ) {
         self.calendarType = calendarType
         self.showDatesOutMonth = showDatesOutMonth
         self.isMonthSwitchingEnabled = isMonthSwitchingEnabled
         self.didSelectDateCompletionHandler = didSelectDateCompletionHandler
+        self.weekdayColor = weekdayColor
     }
     
     public enum CalendarType {

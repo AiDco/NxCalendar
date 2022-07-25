@@ -105,7 +105,7 @@ final class NxCalendarHeaderView: UIView {
                 let weekdayLabel = UILabel()
                 weekdayLabel.font = .boldDMSans(of: 14)
                 weekdayLabel.textAlignment = .center
-                weekdayLabel.textColor = AssetsProvider.weekdayLabelColor
+                weekdayLabel.textColor = service.weekdayColor ?? AssetsProvider.weekdayLabelColor
                 weekdayLabel.text = $0.uppercased()
                 bottomStackView.addArrangedSubview(weekdayLabel)
             }
